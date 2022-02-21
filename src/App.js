@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import { 
+MenuItem,
+FormControl,
+Select 
+} from '@mui/material';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Covid 19 Tracker</h1>
+      <FormControl class="app__dropdown">
+        <Select
+          variant="outlined"
+          value="abc"
+          >
+           <MenuItem value="worldwide">Worldwide</MenuItem>
+           <MenuItem value="worldwide">OPtion 1</MenuItem>
+           <MenuItem value="worldwide">WOOBABYe</MenuItem>
+           <MenuItem value="worldwide">SLATTT</MenuItem>
+        </Select>
+      </FormControl>
+
+    
     </div>
   );
 }
