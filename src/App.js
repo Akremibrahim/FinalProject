@@ -16,9 +16,10 @@ function App() {
           value="abc"
           >
            <MenuItem value="worldwide">Worldwide</MenuItem>
-           <MenuItem value="worldwide">OPtion 1</MenuItem>
-           <MenuItem value="worldwide">WOOBABYe</MenuItem>
-           <MenuItem value="worldwide">SLATTT</MenuItem>
+           <MenuItem value="worldwide">Worldwide</MenuItem>
+           <MenuItem value="worldwide">worldwide</MenuItem>
+           <MenuItem value="worldwide">Worldwide</MenuItem>
+
         </Select>
       </FormControl>
 
