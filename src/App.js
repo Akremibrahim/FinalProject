@@ -78,7 +78,7 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-        <img src= "https://imagizer.imageshack.com/img922/6430/4seluS.png"/>
+         <img src= "https://imagizer.imageshack.com/img922/6430/4seluS.png"/>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
