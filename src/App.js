@@ -8,7 +8,7 @@ import {
   CardContent,
 } from "@mui/material";
 import InfoBox from "./InfoBox";
-import LineGraph from "./LineGraph";
+// import LineGraph from "./LineGraph";
 import Table from "./Table";
 import { sortData, prettyPrintStat } from "./util";
 import numeral from "numeral";
@@ -130,7 +130,7 @@ const App = () => {
             <h3>Live Cases by Country</h3>
             <Table countries={tableData} />
             <h3>Worldwide new {casesType}</h3>
-            <LineGraph casesType={casesType} />
+            {/* <LineGraph casesType={casesType} /> */}
           </div>
         </CardContent>
       </Card>
