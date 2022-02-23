@@ -8,7 +8,7 @@ import {
   CardContent,
 } from "@mui/material";
 import InfoBox from "./InfoBox";
-// import LineGraph from "./LineGraph";
+import LineGraph from "./LineGraph";
 import Table from "./Table";
 import { sortData, prettyPrintStat } from "./util";
 import numeral from "numeral";
@@ -78,7 +78,12 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
+        <video width="320" height="240" controls loop>
+      <source src= "https://c.tenor.com/6utC7ZK8iJkAAAPo/location-red.mp4"/>
+       </video>
+
          <img src= "https://imagizer.imageshack.com/img922/6430/4seluS.png"/>
+         
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
@@ -130,7 +135,7 @@ const App = () => {
             <h3>Live Cases by Country</h3>
             <Table countries={tableData} />
             <h3>Worldwide new {casesType}</h3>
-            {/* <LineGraph casesType={casesType} /> */}
+            <LineGraph casesType={casesType} />
           </div>
         </CardContent>
       </Card>
