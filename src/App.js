@@ -78,7 +78,12 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h1>COVID-19 Tracker</h1>
+        <video width="320" height="240" controls loop>
+      <source src= "https://c.tenor.com/6utC7ZK8iJkAAAPo/location-red.mp4"/>
+       </video>
+
+         <img src= "https://imagizer.imageshack.com/img922/6430/4seluS.png"/>
+         
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
