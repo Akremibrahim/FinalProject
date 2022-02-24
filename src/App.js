@@ -64,12 +64,15 @@ const App = () => {
     await fetch(url)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data)
         setInputCountry(countryCode);
         setCountryInfo(data);
+        const lat = data.countryInfo.lat * 0.000001
+        const long = data.countryInfo.long * 0.000001
 
         countryCode === "worldwide"
           ? setMapCenter([34.80746, -40.4796])
-          : setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+          : setMapCenter([lat, long]);
         countryCode === "worldwide" ? setMapZoom(3) : setMapZoom(4);
       });
   };
